@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* overflow: hidden; */
+  background: #272727;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto,
+    segoe ui, arial, sans-serif;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.SceneContainer{
+  width:80vw;
+  height: 100vh;
+}
+
+.buttonContainer{
+  width: 20vw;
+}
+
+
+.Navigaiton{
+  width: 100%;
+}
+
+.btnContainer{
+  width: 80%;
+  height: 100px;
+  text-align: center;
+  border: #fff 1px solid;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.btnBlock{
+  
+  justify-content: center;
+  
+}
+
+.btnContainer p{
+  color: #fff;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 30px;
+  text-align: center;
+
+}
+
+.btnContainer h5{
+  color: #fff;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.btnContainer button{
+  background-color: aqua;
+  border: #000 2px solid;
+  border-radius: 5px;
+  height: 30px;
+  width: 50%;
+  margin: 5px 5px;
+
+  
+}
+
+.btnContainer button:hover{
+  background-color: red;
+}
+
+.btnContainer span{
+  display:none;
+}
