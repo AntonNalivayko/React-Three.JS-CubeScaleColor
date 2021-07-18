@@ -8,15 +8,15 @@ import * as THREE from 'three';
 
 
 const Box = ({ xClick, yClick, zClick, rClick, gClick, bClick }) => {
-    const [ref, api] = useBox(() => ({ mass: 0, position: [0, 2, 0] }));
+    const [ref, api] = useBox(() => ({ mass: 0, position: [0, 0, 0] }));
     const color7 = new THREE.Color(rClick, gClick, bClick);
     return (
       <mesh
-        onClick={() => { api.velocity.set(0, 2, 0);
+        onClick={() => { api.velocity.set(0, 0, 0);
         console.log(xClick)
         }}
         ref={ref}
-        position={[0, 2, 0]}
+        position={[0, 0, 0]}
       >
         <boxBufferGeometry attach="geometry" args={[xClick, zClick, yClick]} />
         <meshLambertMaterial attach="material" color={color7}  />
